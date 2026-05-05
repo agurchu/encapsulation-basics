@@ -32,7 +32,7 @@ class PersonTest {
     void testInvalidInputsThrowException() {
         Person person = new Person();
 
-        assertThrows(IllegalArgumentException.class, () -> person.setName(""));
+        assertThrows(IllegalArgumentException.class, ( ) -> person.setName(""));
         assertThrows(IllegalArgumentException.class, () -> person.setName(null));
         assertThrows(IllegalArgumentException.class, () -> person.setAge(-5));
         assertThrows(IllegalArgumentException.class, () -> person.setAge(200));
